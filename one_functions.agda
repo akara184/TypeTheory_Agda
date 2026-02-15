@@ -66,7 +66,7 @@ f ∘ g = λ x → f (g x)
 -- combinator
 
 K : A → B → A
-K x Y = x
+K x y = x
 
 S : (A → B → C) → (A → B) → A → C
 S f g x = f x (g x)
@@ -75,4 +75,4 @@ S f g x = f x (g x)
 -- every pure λ-term can be translated into S,K 
 
 -- λ x → f x = f -- η-equality 
-
+   
